@@ -4,7 +4,8 @@ NgPhotogur::Application.routes.draw do
       resources :pictures
     end
   end
-  
-root :to => "static#root"
+
+root :to => "static#root"  
+match '*anything' => "static#root"
  
 end
